@@ -1,0 +1,120 @@
+/* ============================================================
+   Skills Styles
+   ============================================================ */
+
+.skills {
+  padding: var(--section-pad);
+  position: relative;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+/* Group grid */
+.groupGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Group card */
+.group {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: border-color var(--transition);
+}
+
+.group:hover {
+  border-color: var(--border-accent);
+}
+
+/* Group header */
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.groupIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.groupTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Skills list */
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skillRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skillInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.skillName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.skillPct {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* Bar */
+.barTrack {
+  height: 3px;
+  background: var(--border-subtle);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--accent-dim);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 640px) {
+  .groupGrid {
+    grid-template-columns: 1fr;
+  }
+}

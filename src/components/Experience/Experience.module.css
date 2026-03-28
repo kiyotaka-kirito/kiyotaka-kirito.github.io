@@ -1,0 +1,229 @@
+/* ============================================================
+   Experience / Timeline Styles
+   ============================================================ */
+
+.experience {
+  padding: var(--section-pad);
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.experience::before,
+.experience::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+}
+.experience::before { top: 0; }
+.experience::after { bottom: 0; }
+
+.header {
+  margin-bottom: 72px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+/* ============================================================
+   Timeline layout
+   ============================================================ */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Vertical center line */
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--border-subtle) 10%, var(--border-subtle) 90%, transparent);
+  transform: translateX(-50%);
+}
+
+/* Timeline item */
+.item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 48px;
+  width: 100%;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+/* Left: card on left, dot center */
+.itemLeft {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: calc(50% + 32px);
+}
+
+/* Right: card on right, dot center */
+.itemRight {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: calc(50% + 32px);
+}
+
+/* Dot */
+.dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--dot-color, var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dot-color, var(--accent));
+  z-index: 2;
+  box-shadow: 0 0 12px var(--dot-color, var(--accent));
+  flex-shrink: 0;
+  top: 16px;
+}
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  max-width: 440px;
+  width: 100%;
+  transition: border-color var(--transition);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: linear-gradient(90deg, var(--card-accent, var(--accent)), transparent);
+}
+
+.card:hover {
+  border-color: var(--card-accent, var(--accent));
+}
+
+/* Date badge */
+.dateBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.currentBadge {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.role {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.835rem;
+  color: var(--card-accent, var(--accent));
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.separator {
+  color: var(--text-muted);
+}
+
+.location {
+  color: var(--text-muted);
+}
+
+/* Description list */
+.descList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.descList li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.descList li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--card-accent, var(--accent));
+  font-size: 0.65rem;
+  top: 3px;
+}
+
+/* ============================================================
+   Responsive — mobile: single column
+   ============================================================ */
+@media (max-width: 768px) {
+  .timelineLine {
+    left: 16px;
+  }
+
+  .item {
+    padding-bottom: 36px;
+  }
+
+  .itemLeft,
+  .itemRight {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 52px;
+    padding-right: 0;
+  }
+
+  .dot {
+    left: 16px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

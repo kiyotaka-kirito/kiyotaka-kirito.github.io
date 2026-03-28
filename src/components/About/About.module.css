@@ -1,0 +1,249 @@
+/* ============================================================
+   About Styles
+   ============================================================ */
+
+.about {
+  padding: var(--section-pad);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+/* Content grid */
+.grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* ============================================================
+   Left column
+   ============================================================ */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.avatarWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatarInitials {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  z-index: 1;
+}
+
+.avatarGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--accent-dim) 0%, transparent 70%);
+}
+
+.locationBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.statCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 12px;
+  text-align: center;
+  transition: border-color var(--transition);
+}
+
+.statCard:hover {
+  border-color: var(--accent);
+}
+
+.statValue {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   Right column
+   ============================================================ */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.bioText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Certifications */
+.certsTitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.certs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cert {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.certDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 5px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.certLabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.certSub {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Download button */
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.downloadBtn:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 16px var(--accent-dim);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .avatarWrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+  }
+
+  .avatarInitials {
+    font-size: 2rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .avatarWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
