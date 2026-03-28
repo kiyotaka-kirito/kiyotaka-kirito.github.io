@@ -23,7 +23,7 @@ export const personal = {
   avatar: null, // Set to an image path if you have one
   stats: [
     { label: 'iOS Projects', value: '10+' },
-    { label: 'Certifications', value: '4' },
+    { label: 'Certifications', value: '3' },
     { label: 'Years Learning', value: '2+' },
   ],
   social: [
