@@ -17,8 +17,14 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
 }
-.projects::before { top: 0; }
-.projects::after { bottom: 0; }
+
+.projects::before {
+  top: 0;
+}
+
+.projects::after {
+  bottom: 0;
+}
 
 .header {
   margin-bottom: 48px;
@@ -89,8 +95,8 @@
 .card:hover {
   border-color: var(--card-accent, var(--accent));
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-    0 0 0 1px var(--card-accent, var(--accent)), 
-    inset 0 1px 0 rgba(255,255,255,0.05);
+    0 0 0 1px var(--card-accent, var(--accent)),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 /* Top accent line */

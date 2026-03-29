@@ -17,8 +17,14 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
 }
-.experience::before { top: 0; }
-.experience::after { bottom: 0; }
+
+.experience::before {
+  top: 0;
+}
+
+.experience::after {
+  bottom: 0;
+}
 
 .header {
   margin-bottom: 72px;

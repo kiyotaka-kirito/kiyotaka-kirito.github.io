@@ -208,6 +208,7 @@
    Responsive
    ============================================================ */
 @media (max-width: 768px) {
+
   .links,
   .ctaBtn {
     display: none;

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiMail } from 'react-icons/fi';
 import { personal } from '../../data/personal';
 import styles from './Hero.module.css';
+import Container from '../ui/Container';
 
 // --- Typewriter hook ---
 function useTypewriter(words, speed = 60, pause = 2000) {
@@ -56,7 +57,7 @@ export default function Hero() {
       <div className={styles.orb2} aria-hidden="true" />
       <div className={styles.gridOverlay} aria-hidden="true" />
 
-      <div className={styles.innerContainer}>
+      <Container className={styles.innerContainer}>
         {/* LEFT COLUMN: Text Content */}
         <motion.div
           className={styles.leftColumn}
@@ -153,7 +154,7 @@ export default function Hero() {
             </div>
           </motion.div>
         </motion.div>
-      </div>
+      </Container>
 
       <motion.div
         className={styles.scrollIndicator}

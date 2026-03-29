@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 24px 80px;
+  padding: 120px 0 80px;
   overflow: hidden;
 }
 
@@ -53,8 +53,6 @@
 .innerContainer {
   position: relative;
   width: 100%;
-  max-width: var(--container-max);
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;

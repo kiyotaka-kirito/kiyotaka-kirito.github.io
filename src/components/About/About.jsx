@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FiDownload, FiMapPin } from 'react-icons/fi';
 import { personal } from '../../data/personal';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import Container from '../ui/Container';
 import styles from './About.module.css';
 
 /**
@@ -24,7 +25,7 @@ export default function About() {
 
   return (
     <section id="about" className={styles.about}>
-      <div className="container">
+      <Container>
         {/* Section header */}
         <motion.div
           ref={ref}
@@ -111,7 +112,7 @@ export default function About() {
             </a>
           </motion.div>
         </motion.div>
-      </div>
+      </Container>
     </section>
   );
 }
