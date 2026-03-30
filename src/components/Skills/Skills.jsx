@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiCode, FiServer, FiTool } from 'react-icons/fi';
-import { FaMobile } from 'react-icons/fa';
+import { FaApple } from 'react-icons/fa';
 import { skillGroups } from '../../data/skills';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import styles from './Skills.module.css';
 
-const iconMap = { FaMobile, FiServer, FiCode, FiTool };
+const iconMap = { FaApple, FiServer, FiCode, FiTool };
 
 /**
  * Skills — categorized skill groups with progress bars.
