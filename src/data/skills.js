@@ -6,14 +6,13 @@
 
 export const skillGroups = [
   {
-    group: 'iOS Development',
-    icon: 'FaApple',
+    group: 'Mobile Development',
+    icon: 'FaMobile',
     skills: [
-      { name: 'Swift', proficiency: 90 },
-      { name: 'SwiftUI', proficiency: 88 },
-      { name: 'UIKit', proficiency: 82 },
+      { name: 'SwiftUI & UIKit', proficiency: 88 },
       { name: 'Xcode', proficiency: 90 },
       { name: 'Core Data', proficiency: 75 },
+      { name: 'Android Studio', proficiency: 85 },
     ],
   },
   {
@@ -21,8 +20,8 @@ export const skillGroups = [
     icon: 'FiServer',
     skills: [
       { name: 'Firebase', proficiency: 80 },
-      { name: 'REST APIs', proficiency: 85 },
-      { name: 'URLSession', proficiency: 82 },
+      { name: 'Room', proficiency: 75 },
+      { name: 'Alamofire', proficiency: 85 },
       { name: 'Async/Await', proficiency: 78 },
     ],
   },
@@ -31,7 +30,7 @@ export const skillGroups = [
     icon: 'FiCode',
     skills: [
       { name: 'Swift', proficiency: 90 },
-      { name: 'Python', proficiency: 65 },
+      { name: 'Kotlin', proficiency: 80 },
       { name: 'JavaScript', proficiency: 60 },
       { name: 'HTML / CSS', proficiency: 70 },
     ],
