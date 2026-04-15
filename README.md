@@ -26,7 +26,7 @@
 ---
 
 ## 📸 Preview
-<img width="1920" height="1080" alt="Screenshot 2026-03-31 at 12 48 22 AM" src="https://github.com/user-attachments/assets/c4638e7b-c53f-4a21-8785-c2ae80b48c45" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-15 at 6 42 06 PM" src="https://github.com/user-attachments/assets/be509bb3-8e76-4176-a9f1-3b6d0356f2f8" />
 
 ---
 
