@@ -14,7 +14,7 @@ export const personal = {
   bioLong: `With a background in both Geology and Information Technology, I bring 
   a unique analytical perspective to software development. My journey into iOS development 
   started with a deep curiosity for how great apps work — and a drive to build them myself. 
-  I hold certificates from PADC (Professional App Developer Certificate), and have completed 
+  I hold certificates from PADC.com.mm, and have completed 
   rigorous SwiftUI and UIKit courses. I care deeply about code quality, user experience, 
   and writing software that lasts.`,
   location: 'Bangkok, Thailand',
@@ -22,8 +22,8 @@ export const personal = {
   cvPath: '/data/PaingHtet\'s Developer CV.pdf',
   avatar: null, // Set to an image path if you have one
   stats: [
-    { label: 'iOS Projects', value: '10+' },
-    { label: 'Certifications', value: '3' },
+    { label: 'iOS Projects', value: '5+' },
+    { label: 'Certifications', value: '3+' },
     { label: 'Years Learning', value: '2+' },
   ],
   social: [

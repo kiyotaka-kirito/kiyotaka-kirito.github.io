@@ -83,9 +83,11 @@ export default function About() {
             <div className={styles.certsTitle}>Certifications & Education</div>
             <div className={styles.certs}>
               {[
-                { label: 'UIKit Certified', sub: 'iOS Development' },
-                { label: 'SwiftUI Certified', sub: 'iOS Development' },
-                { label: 'PADC Certificate', sub: 'Myanmar Mobile Developer' },
+                { label: 'SwiftUI & UIKit', sub: 'Hacking with Swift' },
+                { label: 'iOS Development', sub: 'CodeWithChris' },
+                { label: 'Android Development', sub: 'PADC.com.mm' },
+                { label: 'ANE & CCNA', sub: 'YIC' },
+                { label: 'Network Engineering & System Development', sub: 'ICT@mm' },
                 { label: 'B.Sc. Geology', sub: 'University of Yangon' },
                 { label: 'Diploma in IT', sub: 'Information Technology' },
               ].map((cert) => (
