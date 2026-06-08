@@ -19,7 +19,7 @@ export const personal = {
   and writing software that lasts.`,
   location: 'Bangkok, Thailand',
   email: 'mghtetpai.1999@gmail.com',
-  cvPath: '/data/PaingHtet IOS Developer Resume.pdf',
+  cvPath: '/data/painghtet-ios-developer-resume.pdf',
   avatar: null, // Set to an image path if you have one
   stats: [
     { label: 'iOS Projects', value: '4+' },
