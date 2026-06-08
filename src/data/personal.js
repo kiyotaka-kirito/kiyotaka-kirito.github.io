@@ -3,8 +3,6 @@
  * Edit this file to update your personal details throughout the portfolio
  */
 
-import cvPdf from '../../data/PaingHtet iOS Developer Resume.pdf';
-
 export const personal = {
   name: 'Paing Htet',
   initials: 'PH',
@@ -21,8 +19,8 @@ export const personal = {
   and writing software that lasts.`,
   location: 'Bangkok, Thailand',
   email: 'mghtetpai.1999@gmail.com',
-  cvPath: cvPdf,
-  avatar: null, // Set to an image path if you have one
+  cvPath: '../../data/PaingHtet iOS Developer Resume.pdf',
+  avatar: null, // Set to an image path if you have onex
   stats: [
     { label: 'iOS Projects', value: '4+' },
     { label: 'Certifications', value: '3+' },
