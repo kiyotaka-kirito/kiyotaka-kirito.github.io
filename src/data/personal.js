@@ -14,17 +14,17 @@ export const personal = {
   bioLong: `With a background in both Geology and Information Technology, I bring 
   a unique analytical perspective to software development. My journey into iOS development 
   started with a deep curiosity for how great apps work — and a drive to build them myself. 
-  I hold certificates from PADC.com.mm, and have completed 
+  I hold certificates from CodeWithChris & HackingWithSwift, and have completed 
   rigorous SwiftUI and UIKit courses. I care deeply about code quality, user experience, 
   and writing software that lasts.`,
   location: 'Bangkok, Thailand',
   email: 'mghtetpai.1999@gmail.com',
-  cvPath: '/data/PaingHtet\'s Developer CV.pdf',
+  cvPath: '/data/PaingHtet IOS Developer Resume.pdf',
   avatar: null, // Set to an image path if you have one
   stats: [
-    { label: 'iOS Projects', value: '5+' },
+    { label: 'iOS Projects', value: '4+' },
     { label: 'Certifications', value: '3+' },
-    { label: 'Years Learning', value: '2+' },
+    { label: 'Years Learning', value: '1+' },
   ],
   social: [
     {

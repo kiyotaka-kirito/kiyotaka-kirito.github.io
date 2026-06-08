@@ -10,8 +10,8 @@ export const skillGroups = [
     icon: 'FaApple',
     skills: [
       { name: 'SwiftUI & UIKit', proficiency: 88 },
-      { name: 'Xcode', proficiency: 90 },
-      { name: 'Core Data', proficiency: 75 },
+      { name: 'Xcode', proficiency: 80 },
+      { name: 'Core Data', proficiency: 70 },
       { name: 'Combine', proficiency: 70 },
     ],
   },
@@ -19,10 +19,10 @@ export const skillGroups = [
     group: 'Backend & APIs',
     icon: 'FiServer',
     skills: [
-      { name: 'Firebase', proficiency: 80 },
-      { name: 'Realm', proficiency: 75 },
-      { name: 'Alamofire', proficiency: 85 },
-      { name: 'Async/Await', proficiency: 78 },
+      { name: 'Firebase', proficiency: 75 },
+      { name: 'Realm', proficiency: 50 },
+      { name: 'Alamofire', proficiency: 50 },
+      { name: 'Async/Await', proficiency: 80 },
     ],
   },
   {
@@ -30,8 +30,8 @@ export const skillGroups = [
     icon: 'FiCode',
     skills: [
       { name: 'Swift', proficiency: 90 },
-      { name: 'JavaScript', proficiency: 60 },
-      { name: 'HTML / CSS', proficiency: 70 },
+      { name: 'JavaScript', proficiency: 50 },
+      { name: 'HTML / CSS', proficiency: 50 },
     ],
   },
   {
@@ -39,8 +39,8 @@ export const skillGroups = [
     icon: 'FiTool',
     skills: [
       { name: 'Git / GitHub', proficiency: 85 },
-      { name: 'Figma', proficiency: 68 },
-      { name: 'Agile / Scrum', proficiency: 70 },
+      { name: 'Figma', proficiency: 50 },
+      { name: 'Agile / Scrum', proficiency: 0 },
     ],
   },
 ];

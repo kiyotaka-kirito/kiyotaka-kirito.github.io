@@ -7,18 +7,17 @@ export const timeline = [
   {
     id: 1,
     type: 'work',
-    role: 'iOS Developer (Freelance)',
-    company: 'Self-Employed',
+    role: 'Content Creator',
+    company: 'Heather Beauty (Online Shopping)',
     location: 'Bangkok, Thailand',
-    startDate: '2025',
-    endDate: 'Present',
+    startDate: '2024',
+    endDate: '2025',
     description: [
-      'Designed and developed multiple iOS applications using Swift, SwiftUI, and UIKit.',
-      'Integrated Firebase for real-time data, authentication, and cloud functions.',
-      'Followed Apple Human Interface Guidelines to deliver polished, accessible apps.',
-      'Managed end-to-end app lifecycle: architecture, UI, testing, and TestFlight distribution.',
+      'Designed the official brand page logo and created engaging visual and textual content focusing on cosmetic products.',
+      'Developed and managed content schedules (post scheduling) to maintain a consistent social media presence across platforms.',
+      'Monitored page engagement, tracked customer inquiries, and gained a deep understanding of online retail and e-commerce workflows.'
     ],
-    current: true,
+    current: false,
   },
   {
     id: 2,
@@ -27,7 +26,7 @@ export const timeline = [
     company: 'Hacking with Swift & CodeWithChris',
     location: 'Online',
     startDate: '2023',
-    endDate: '2025',
+    endDate: '2024',
     description: [
       'Completed in-depth SwiftUI, UIKit, Networking & Database certification courses.',
       'Built multiple hands-on projects covering navigation, animations, data persistence, and networking.',
@@ -36,10 +35,25 @@ export const timeline = [
   },
   {
     id: 3,
+    type: 'work',
+    role: 'Graphic Designer',
+    company: 'T&T Sticker Design Company Ltd.',
+    location: 'Yangon, Myanmar',
+    startDate: '2020',
+    endDate: '2023',
+    description: [
+      'Collaborated with clients to transform concepts into clean, high-quality stickers, street signboards, and corporate logos.',
+      'Utilized CorelDRAW to create and refine precise vector designs based on client requirements.',
+      'Operated vinyl cutting and printing software/machines, managing color adjustments, prepress scaling, and final production to ensure top-tier product delivery.'
+    ],
+    current: false,
+  },
+  {
+    id: 4,
     type: 'certificate',
     role: 'Android Development',
     company: 'PADC.com.mm',
-    location: 'Myanmar',
+    location: 'Yangon, Myanmar',
     startDate: '2022',
     endDate: '2023',
     description: [
@@ -48,8 +62,9 @@ export const timeline = [
     ],
     current: false,
   },
+
   {
-    id: 4,
+    id: 5,
     type: 'education',
     role: 'Bachelor of Science — Geology',
     company: 'University of Yangon',
@@ -63,7 +78,7 @@ export const timeline = [
     current: false,
   },
   {
-    id: 5,
+    id: 6,
     type: 'education',
     role: 'Diploma in Information Technology',
     company: 'Institute of Information Technology',
@@ -71,8 +86,8 @@ export const timeline = [
     startDate: '2016',
     endDate: '2017',
     description: [
-      'Studied core computer science fundamentals including programming, databases, networking, and software engineering.',
-      'Transitioned from Geology background into a technical IT career path.',
+      "Certificated with a Diploma in Information Technology, improving technical skills.",
+      'Studied core computer science fundamentals including programming, databases, networking, and software engineering.'
     ],
     current: false,
   },
